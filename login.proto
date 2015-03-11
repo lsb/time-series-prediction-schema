@@ -1,0 +1,12 @@
+import "id.proto"
+
+message AttemptedLogin {
+  required UUID id = 1;
+  required fixed64 epochmillis = 2;
+}
+
+message SuccessfulLogin {
+  required UUID id = 1;
+  required fixed64 epochmillis = 2;
+  // TODO: add more fields, like user id
+}

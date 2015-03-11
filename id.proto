@@ -1,0 +1,4 @@
+message UUID {
+  required fixed64 lo = 1;
+  required fixed64 hi = 2;
+}
