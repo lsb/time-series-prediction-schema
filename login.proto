@@ -1,4 +1,4 @@
-import "id.proto";
+import "longid.proto";
 
 message AttemptedLogin {
   required UUID id = 1;
