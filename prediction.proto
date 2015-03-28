@@ -1,0 +1,19 @@
+import "longid.proto";
+
+message EpochMilliInterval {
+  required fixed64 from = 1;
+  required fixed64 to   = 2;
+}
+
+message PointForecast {
+  required EpochMilliInterval interval = 1;
+  required double p50 = 2;
+  optional double p99 = 3;
+  optional double p01 = 4;
+}
+
+message LongTermForecast {
+  required UUID id = 1;
+  required fixed64 epochmillis = 2;
+  repeated PointForecast forecasts = 3;
+}
